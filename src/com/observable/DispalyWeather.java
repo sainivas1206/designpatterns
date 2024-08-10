@@ -14,7 +14,7 @@ public class DispalyWeather implements Observer{
     }
 
     public void display(){
-        System.out.println("Current conditions: " + temp + "F degrees, " + humidity + "% humidity, " + pressure + " hPa");
+        System.out.println("DispalyWeather: " + temp + "F degrees, " + humidity + "% humidity, " + pressure + " hPa");
     }
 
 }

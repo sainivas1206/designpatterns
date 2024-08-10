@@ -2,9 +2,9 @@ package com.strategy;
 
 public abstract class Duck {
 
-    private  FlyBehaviour flyBehaviour;
+    protected  FlyBehaviour flyBehaviour;
 
-    private QuackBehaviour quackBehaviour;
+    protected QuackBehaviour quackBehaviour;
 
     public abstract void display();
 

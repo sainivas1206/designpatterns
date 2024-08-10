@@ -1,20 +1,63 @@
-import com.observable.DispalyWeather;
-import com.observable.Observer;
-import com.observable.WeatherData;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+// Define the Person class
+class Person {
+    private String name;
+    private int age;
+
+    // Constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Getters
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    // toString method for easy printing
+    @Override
+    public String toString() {
+        return name + " (" + age + ")";
+    }
+}
 
 public class App {
-    public static void main(String[] args) throws Exception {
 
-        WeatherData weatherData = new WeatherData();
+    public static void main(String[] args) {
+        // Create a list of Person objects
+        List<Person> people = new ArrayList<>();
+        people.add(new Person("Alice", 30));
+        people.add(new Person("Bob", 25));
+        people.add(new Person("Charlie", 35));
+        people.add(new Person("David", 25));
 
-        // new DispalyWeather(weatherData);
-       Observer obj =  new DispalyWeather();
-       weatherData.registerObserver(obj);
+        // Sort by age using a custom Comparator
+        System.out.println("Sorting by age:");
+        Collections.sort(people, new Comparator<Person>() {
+            @Override
+            public int compare(Person p1, Person p2) {
+                return Integer.compare(p1.getAge(), p2.getAge());
+            }
+        });
+        System.out.println(people);
 
-
-        weatherData.setMeasurements(25.5f, 65.3f, 1012f);
-        weatherData.setMeasurements(26.7f, 70.4f, 1015f);
-        weatherData.setMeasurements(28.2f, 68.9f, 1010f);
-
+        // Sort by name using a custom Comparator
+        System.out.println("\nSorting by name:");
+        Collections.sort(people, new Comparator<Person>() {
+            @Override
+            public int compare(Person p1, Person p2) {
+                return p1.getName().compareTo(p2.getName());
+            }
+        });
+        System.out.println(people);
     }
 }
