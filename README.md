@@ -1,18 +1,25 @@
-## Getting Started
+### The Strategy Pattern
+`Design Principle`
+Identify the aspects of your application that vary and separate them from what stays the same.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+`Design Principle`
+Program to an interface, not an implementation
 
-## Folder Structure
+`Design Principle`
+Favor composition over inheritance.
 
-The workspace contains two folders by default, where:
+`The Strategy Pattern` defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### The Observer Pattern
+`Publishers + Subscribers = Observer Pattern`
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+`Design Principle`
+Strive for loosely coupled designs between objects that interact.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+`The Observer Pattern` defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 
-## Dependency Management
+### The Decorator Pattern`
+`Design Principle`
+Classes should be open for extension, but closed for modification.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+`The Decorator Pattern` attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality
