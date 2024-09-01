@@ -14,8 +14,8 @@
 
 > `The Observer Pattern` defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 
-### The Decorator Pattern`
+### The Decorator Pattern
 `Design Principle`
 - Classes should be open for extension, but closed for modification.
 
-> `The Decorator Pattern` attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality
+> `The Decorator Pattern` attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to sub-classing for extending functionality
