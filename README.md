@@ -19,3 +19,9 @@
 - Classes should be open for extension, but closed for modification.
 
 > `The Decorator Pattern` attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to sub-classing for extending functionality
+
+### The Iterator Pattern
+`Design Principle`
+- Classes should be open for extension, but closed for modification.
+
+> `The Iterator Pattern` provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
